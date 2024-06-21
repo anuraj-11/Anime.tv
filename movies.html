@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Add your navbar links here -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-telegram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="movies.html">Movies</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="tvseries.html">TV Series</a></li>
+                            <li><a class="dropdown-item" href="mostpopular.html">Most Popular</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex me-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" style="width: 400px;" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Welcome back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="g-recaptcha mb-3" data-sitekey="your-site-key"></div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h1 style="color: pink; margin-top: 20px;">ANIME MOVIES</h1>
+      <!-- Movie Posters Row -->
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/idolish7-movie-live-4bit-beyond-the-period-19176" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 1">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/da7db51aaf278283e526632d29fe1ee5.jpg" alt="Movie 1 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-2" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 2">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/6027737328a36a7f1f226d26f6906347.jpg"  alt="Movie 2 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-3" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 3">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/83b43d4a96a0ed8ca1fe36073ed058a4.jpg" alt="Movie 3 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-4" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="movie 4">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/5c563da71f1ff4427ee75cc413e75e14.jpg" alt="Movie 4 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-1" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 1">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/8d112670f41684d97015004293a087dc.jpg" alt="Movie 1 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-2" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 2">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/731d42b1db07294e397cf73acaa59398.jpg" alt="Movie 2 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-3" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 3">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/9422d14cbfa41655b7c2e7757fc2b3cd.jpg" alt="Movie 3 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-4" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="movie 4">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/1ba02bb512cb1fd9db3a1b30aa4f674a.jpg" alt="Movie 4 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-1" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 1">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/98512a2461fa97887ee02fbde4d41c58.jpg" alt="Movie 1 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-2" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 2">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/a1beae1edd3598307a2396a04235371a.jpg" alt="Movie 2 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-3" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie 3">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/f7f3b1453a69e57058bf7c002957dd3e.jpg" alt="Movie 3 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="/movie-4" class="film-poster" data-bs-toggle="tooltip" data-bs-placement="top" title="movie 4">
+                    <img src="//cdn.noitatnemucod.net/thumbnail/300x400/100/37f9348bd0d3dfc158225e4176d3587b.jpg" alt="Movie 4 Poster">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+
+
+    
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- Social Media Icons -->
+      <a href="https://www.reddit.com" target="_blank" class="btn btn-outline-secondary m-2">
+        <i class="fab fa-reddit-alien"></i>
+    </a>
+    <a href="https://www.discord.com" target="_blank" class="btn btn-outline-secondary m-2">
+        <i class="fab fa-discord"></i>
+    </a>
+    <a href="https://web.telegram.org" target="_blank" class="btn btn-outline-secondary m-2">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="btn btn-outline-secondary m-2">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+  
+</body>
+</html>
+

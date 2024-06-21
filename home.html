@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Add your navbar links here -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-telegram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="movies.html">Movies</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="tvseries.html">TV Series</a></li>
+                            <li><a class="dropdown-item" href="mostpopular.html">Most Popular</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex me-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" style="width: 400px;" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Welcome back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="g-recaptcha mb-3" data-sitekey="your-site-key"></div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 style="color: pink; margin-top: 20px;">TRENDING</h1>
+        <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/demon slayer.anime.jpeg" class="card-img-top" alt="Trending Image 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">01</h5>
+                                    <p class="card-text">Demon slayer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/one piece.com.jpeg" class="card-img-top" alt="Trending Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">02</h5>
+                                    <p class="card-text">One piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/myhero acadamia.anime.png" class="card-img-top" alt="Trending Image 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">03</h5>
+                                    <p class="card-text">My hero acadamia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/kaiju no 8.png" class="card-img-top" alt="Trending Image 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">04</h5>
+                                    <p class="card-text">Demon slayer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/wind breaker.png" class="card-img-top" alt="Trending Image 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">05</h5>
+                                    <p class="card-text">One piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./Image/the new gate.png" class="card-img-top" alt="Trending Image 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">06</h5>
+                                    <p class="card-text">My hero acadamia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more carousel-item divs as needed -->
+                 
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 id="upcoming-heading" style="color: pink; margin-top: 20px;">UPCOMING</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/head start with birth.jpg" class="card-img-top" alt="Upcoming Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Head Start at Birth</h5>
+                        <p class="card-text">Aired: Jul 7, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/upcoming2.jpg" class="card-img-top" alt="Upcoming Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cardfight!! Vanguard: Divinez</h5>
+                        <p class="card-text">Aired: Jul 6, 2024 to ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/upcoming3.jpg" class="card-img-top" alt="Upcoming Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Yami Shibai 13</h5>
+                        <p class="card-text">Aired: Jul 15, 2024 to ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/upcoming4.jpg" class="card-img-top" alt="Upcoming Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Egumi Legacy</h5>
+                        <p class="card-text">Aired: Jul 9, 2024 to ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/upcoming5.jpg" class="card-img-top" alt="Upcoming Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stick It on Around! Koinu </h5>
+                        <p class="card-text">Aired: Jul 6, 2024 to Sep 7, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Image/upcoming6.jpg" class="card-img-top" alt="Upcoming Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kimi ni Todoke: From Me to You </h5>
+                        <p class="card-text">Aired: ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+        <!-- Social Media Icons -->
+        <a href="https://www.reddit.com" target="_blank" class="btn btn-outline-secondary m-2">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://www.discord.com" target="_blank" class="btn btn-outline-secondary m-2">
+            <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://web.telegram.org" target="_blank" class="btn btn-outline-secondary m-2">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="btn btn-outline-secondary m-2">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html
+
+
+
+
+
+
+
+
+
